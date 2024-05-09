@@ -31,12 +31,12 @@
 // console.log(media) 
 
 
-// parseFloat => Transforma o que esta entre () em numero com virgula / numero frasionado
-let produto1 = parseFloat(prompt("Digite o valor do produto"))
+// // parseFloat => Transforma o que esta entre () em numero com virgula / numero frasionado
+// let produto1 = parseFloat(prompt("Digite o valor do produto"))
 
-let produto2 = parseFloat(prompt("Digite o valor do segundo produto"))
+// let produto2 = parseFloat(prompt("Digite o valor do segundo produto"))
 
-let soma = produto1 + produto2;
+// let soma = produto1 + produto2;
 
-console.log(soma)
+// console.log(soma)
 
