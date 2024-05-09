@@ -22,7 +22,6 @@ if ( username == "admin" && senha == "senha123"){
 console.log("Voce nao tem permissão de acesso")
 }
 
-console.log("Bem vindo" + username)
-
 
 // Exiba uma mensagem indicando se o login foi bem sucedido ou nao.
+console.log("Bem vindo" + username)
