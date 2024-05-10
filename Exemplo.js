@@ -24,14 +24,14 @@
 // --- parseInt Transforma o que esta dentro de um () em numero inteiro: 1,2,3... ---
 
 //  let nota1 = parseInt(prompt("Digite uma nota: "))
-//  let nota2 = parseInt(prompt("Digite uoutra nota: "))
+//  let nota2 = parseInt(prompt("Digite outra nota: "))
 
 // let media = nota1 + nota2 /2
 
 // console.log(media) 
 
 
-// // parseFloat => Transforma o que esta entre () em numero com virgula / numero frasionado
+// // parseFloat => Transforma o que esta entre () em numero com virgula / numero fraionado
 // let produto1 = parseFloat(prompt("Digite o valor do produto"))
 
 // let produto2 = parseFloat(prompt("Digite o valor do segundo produto"))
