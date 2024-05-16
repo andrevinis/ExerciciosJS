@@ -12,4 +12,4 @@
 //     num++
 // }
 
-// console.log ("A soma dos numeros de 1 a 100 é: " + soma)
+// console.log ("A soma dos numeros de 1 a 100 é: " +)
