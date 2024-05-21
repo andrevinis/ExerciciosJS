@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -14,23 +14,35 @@
     </ul>
 
     <button onclick="adicionarItem()">Adicionar Item</button>
-    <button>Remover Item</button>
+    <button onclick="removerItem()">Remover Item</button>
 
 
     <script>
         function adicionarItem(){
-    // cria um novo elemento
-    let novoItem = document.createElement("li")
+            // cria um novo elemento
+            let novoItem = document.createElement("li")
 
-    // Define o texto do novo item
-    novoItem.textContent = "Novo Item";
+            // Define o texto do novo item
+            novoItem.textContent = "Novo Item";
 
-    // adiciona um novo item a lista
-    let lista = document.getElementById("minhaLista")
-    lista.appendChild(novoItem)
+            // adiciona um novo item a lista
+            let lista = document.getElementById("minhaLista")
+            lista.appendChild(novoItem)
 
+        }
+
+        function removerItem(){
+            // Identifica um item no html
+            let lista = document.getElementById("minhaLista")
+
+            // remove o ultimo item da lista se existir, se nao houver, nao havera erro
+            if(lista.children.length > 0){
+
+                // remove o ultimo item da lista
+            lista.removeChild(lista.lastElementChild)
+            }
         }
         
     </script>
 </body>
-</html> -->
+</html>
