@@ -2,152 +2,180 @@
 // para ser executado.
 // repita a sua execução, disponibilize as opcoes para o usuario, até que seja digitado"sair"
 
-function exercicioLogin(){
+function Login() {
 
-let username = prompt("Digite um nome de usuário: ")
+    let username = prompt("Digite um nome de usuário: ")
 
-let senha = prompt("Digite a senha: ")
+    let senha = prompt("Digite a senha: ")
 
-if ( username == "admin" && senha == "senha123"){
-    console.log("Login bem sucedido");
-} else {
-console.log("Voce nao tem permissão de acesso")
-}
-}
-
-
-
-let opcao = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login - Digite 1 ")
-
-switch(opcao){
-    case "1":
-        exercicioLogin()
-        break;
-
-    default:
-        break;
+    if (username == "andre" && senha == "senha123") {
+        console.log("Login bem sucedido");
+    } else {
+        console.log("Voce nao tem permissão de acesso")
+    }
 }
 
+function Nascimento() {
+
+    let data = parseInt(prompt("Digite seu ano  de nascimento: "))
+
+    if (data <= "2005") {
+        alert("Maior de idade")
+        console.log("Maior de idade")
+    }
+
+    else {
+        alert("Menor de idade")
+        console.log("Menor de idade")
+    }
+}
 
 
-function exercicioDiaDaSemana(){
+
+function DiaDaSemana() {
 
     let dia = prompt("Digite um dia da semana: ")
-    
+
     if (dia == 1) {
-        alert ("Segunda-feira")
+        alert("Segunda-feira")
     }
-    
+
     else if (dia == 2) {
-        alert ("Terça-feira")
+        alert("Terça-feira")
     }
-    
+
     else if (dia == 3) {
-        alert ("Quarta-feira")
+        alert("Quarta-feira")
     }
-    
+
     else if (dia == 4) {
-        alert ("Quinta-feira")
+        alert("Quinta-feira")
     }
-    
+
     else if (dia == 5) {
-        alert ("Sexta-feira")
+        alert("Sexta-feira")
     }
-    
+
     else if (dia == 6) {
-        alert ("Sábado")
+        alert("Sábado")
     }
-    
+
     else if (dia == 7) {
-        alert ("Domingo")
+        alert("Domingo")
     }
+}
+
+
+function ImparPar() {
+
+    let numero = prompt("Digite um numero")
+
+    if (numero % 2 == 0) {
+        alert("par")
     }
 
-    let opcao2 = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login \n\n2 - Dia Da Semana - Digite 2")
+    else if (numero % 2 == 1) {
+        alert("ímpar")
+    }
 
-    
-    switch(opcao2){
-        case "2":
-            exercicioDiaDaSemana()
+}
+
+function Sequencia10() {
+
+
+    for (let num = 0; num <= 10; num++) {
+        console.log(num);
+    }
+
+}
+
+
+function Pares10() {
+    for (let num = 0; num <= 10; num++) {
+        if (num % 2 == 0) {
+            console.log(num);
+        }
+    }
+}
+
+
+function Impares50() {
+    for (let num = 0; num <= 50; num++) {
+        if (num % 2 !== 0) {
+            console.log(num);
+        }
+    }
+}
+
+let opcao
+
+opcao = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login \n\n2 - Data de Nascimento \n\n3 - Dia Da Semana  \n\n4 - Impar Par \n\n5 - Sequencia de 0 a 10 \n\n6 - Pares até 10 \n\n7 - Impares 50 ")
+
+while (opcao !== "sair") {
+
+    switch (opcao) {
+
+        case "1":
+            Login()
             break;
-    
+
+        case "2":
+            Nascimento()
+            break;
+
+        case "3":
+            DiaDaSemana()
+            break;
+
+        case "4":
+            ImparPar()
+            break;
+
+        case "5":
+            Sequencia10()
+            break;
+
+        case "6":
+            Pares10()
+            break;
+
+        case "7":
+            Impares50()
+            break;
+
         default:
             break;
     }
 
+    opcao = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login \n\n2 - Data de Nascimento \n\n3 - Dia Da Semana  \n\n4 - Impar Par \n\n5 - Sequencia de 0 a 10 \n\n6 - Pares até 10 \n\n7 - Impares 50 ")
+
+}
 
 
-    function exercicioImparPar(){
+// do {
 
-        let numero = prompt ("Digite um numero")
+//     opcao = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login \n\n2 - Data de Nascimento \n\n3 - Dia Da Semana  \n\n4 - Impar Par \n\n5 - Sequencia de 0 a 10 \n\n6 - Pares até 10 \n\n7 - Impares 50 ")
 
-        if (numero %2 == 0){
-            alert ("par")
-        }
-
-        else if (numero %2 == 1){
-            alert ("ímpar")
-        }
-        
-        }
-        
-        
-        
-        let opcao3 = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login  \n\n2 - Dia Da Semana  \n\n3 - Impar Par - Digite 3")
-        
-        switch(opcao3){
-            case "3":
-                exercicioImparPar()
-                break;
-        
-            default:
-                break;
-        }
-    
-    function exercicioSequencia10(){
-
-      
-        for (let num = 0; num <= 10; num++) {
-            console.log(num);
-        }
-        
-        }
-        
-        
-
-        let opcao4 = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login  \n\n2 - Dia Da Semana  \n\n3 - Impar Par \n\n4 - Sequencia de 0 a 10 - Digite 4 ")
-        
-        switch(opcao4){
-            case "4":
-                Sequencia10()
-                break;
-        
-            default:
-                break;
-        }
-    function Pares10(){
-        for (let num =0; num <= 10; num++){
-            if (num%2 == 0){
-                console.log(num);
-            }
-        }
-        }
-        
-        
-
-        let opcao5 = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login  \n\n2 - Dia Da Semana  \n\n3 - Impar Par \n\n4 - Sequencia de 0 a 10 \n\n5 - Pares até 10 - Digite 5")
-        
-        switch(opcao5){
-            case "5":
-                Pares10()
-                break;
-        
-            default:
-                break;
-        }
+// } while (opcao != "sair ")
 
 
 
-    
-  
-    
+
+
+
+
+// let opcao7 = window.prompt("MENU\nDigite a opção desejada:\n\n1 - Login \n\n2 - Data de Nascimento \n\n3 - Dia Da Semana  \n\n4 - Impar Par \n\n5 - Sequencia de 0 a 10 \n\n6 - Pares até 10 \n\n7 - Impares 50 - Digite 7")
+
+// switch (opcao7) {
+//     case "7":
+//         Impares50()
+//         break;
+
+//     default:
+//         break;
+// }
+
+
+
+
+
